@@ -1,0 +1,30 @@
+.site-menu{
+	position: fixed;
+	left: 12%;
+	padding: 1em;
+	z-index: 1;
+	background: $color_secondary;
+	border: .4em solid $color_base;
+	text-align: start;
+	clip-path: circle(0px at top left);
+	transition: clip-path ease-in-out 500ms;
+
+	li, a{
+		color: $color_dark;
+	}
+
+	&__first-level{
+		font-weight: 600;
+		line-height: 1.4em;
+	}
+
+	&__second-level{
+		font-weight: 200;
+		padding-left: 1em;
+		line-height: 1.1em;
+	}
+
+	&--active{
+		clip-path: circle(250% at top left);
+	}
+}

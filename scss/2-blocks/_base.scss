@@ -1,0 +1,57 @@
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Cochin', serif;
+}
+
+body{
+	background-color: $color_base;
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+}
+
+a, u{
+    text-decoration: none !important;
+}
+
+img, video{
+	display: block;
+}
+
+h1{
+	margin: 0;
+	margin-bottom: .2em;
+	font-size: 1.75em;
+	font-weight: 600;
+	font-style: italic;
+	color: $color_dark;
+
+	@include media-query(tablet-landscape-up){
+		font-size: 2.3em;
+	}
+}
+
+h2{
+	margin: 0;
+	margin-bottom: .2em;
+	font-size: 1.5em;
+	font-weight: 500;
+	color: $color_dark;
+}
+
+p{
+	font-weight: 100;
+	line-height: 1.3em;
+	color: $color_dark;
+
+	@include media-query(tablet-landscape-up){
+		font-size: 1.2em;
+	}
+}

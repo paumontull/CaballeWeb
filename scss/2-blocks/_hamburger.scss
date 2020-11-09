@@ -1,0 +1,40 @@
+$hbgrLineHeight: 6px;
+$hbgrLineWidth: $hbgrLineHeight * 5.5;
+$hbgrLineSep: $hbgrLineHeight * 0.75;
+$hbgrHeight: $hbgrLineHeight * 3 + $hbgrLineSep * 2;
+$hbgrMargin: 0;
+
+.hamburger, .hamburger::before, .hamburger::after{
+	content: '';
+	display: block;
+	z-index: 100;
+	background: $color_base;
+	height: $hbgrLineHeight;
+	width: $hbgrLineWidth;
+	border-radius: 3px;
+	transition: all ease-in-out 500ms;
+}
+
+.hamburger{
+	margin: ($hbgrHeight / 2 + $hbgrMargin) $hbgrMargin;
+	align-self: center;
+	transform: translateX(-40%);
+
+	&::before{
+		transform: translateY(-$hbgrLineHeight - $hbgrLineSep);
+	}
+	&::after{
+		transform: translateY($hbgrLineSep);
+	}
+
+	&--active{
+		transform: rotate(45deg);
+
+		&::before{
+			transform: translateY(0) rotate(90deg);
+		}
+		&::after{
+			transform: translateY(-$hbgrLineHeight) rotate(90deg);
+		}
+	}
+}

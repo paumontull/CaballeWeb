@@ -1,0 +1,79 @@
+.content-vestit{
+	width: 100%;
+	height: 100%;
+
+	&__article{
+		padding: 2em;
+
+		&>img{
+			padding: 1em 0;
+		}
+
+		span{
+			font-size: .75em;
+			display: block;
+			text-align: start;
+			padding: 0 10%;
+			color: $color_dark;
+		}
+	}
+
+	&__vestit{
+		position: sticky;
+		bottom: 0;
+		max-width: 100%;
+		width: 25em;
+		margin: auto auto 0 auto;
+
+		cursor: move;
+		cursor: grab;
+
+		&--active{
+			cursor: grabbing;
+		}
+	}
+
+	&__dark{
+		margin-top: 2em;
+		padding: 2.3em;
+		background: $color_secondary;
+		width: 100%;
+
+		h1{
+			font-style: normal;
+		}
+	}
+
+	img{
+		width: 100%;
+	}
+
+	@include media-query(tablet-landscape-up){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100%;
+		grid-template-areas:
+			"vestit article";
+
+		&__article{
+			grid-area: article;
+			padding: 10% 25% 0 0;
+			overflow-y: scroll;
+
+			&>img{
+				padding: 1em;
+			}
+
+			span{
+				font-size: .9em;
+			}
+		}
+
+		&__vestit{
+			grid-area: vestit;
+			position: relative;
+			width: unset;
+			max-height: 90%;
+		}
+	}
+}
