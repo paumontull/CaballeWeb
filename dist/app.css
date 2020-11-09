@@ -684,10 +684,11 @@ p {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: img;
-    height: 60%;
+    background: #C69C6D;
   }
   .landing__hero-img img {
     width: 60%;
+    margin: auto;
   }
   .landing__hero-title {
     padding: .5em 25%;
