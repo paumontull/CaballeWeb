@@ -1,6 +1,5 @@
 .content-colleccio{
 	height: 100%;
-	//width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: scroll;
@@ -12,34 +11,29 @@
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
 
-
-	/* height: 100%;
-	display: grid;
-	grid-template-rows: auto 1fr; */
-
-	img{
+	&__intro{
+		flex: 0 0 auto;
+		position: relative;
 		height: 100%;
-		flex: 0 0 auto;
-	}
-
-	&__page{
-		flex: 0 0 auto;
+		width: $timeline_period_width_small;
 		padding: 2em;
-		width: 88vw;
+		padding-bottom: 10vh;
 
-		h2{
-			text-transform: uppercase;
+		p{
+			font-size: 1.9vh;
 		}
-
-		&--double{
-			width: 176vw;
-			
+		img{
+			margin: auto
 		}
 	}
 
 	@include media-query(tablet-portrait-up){
-		&__page{
-			width: 50vw;
+		&__intro{
+			padding: 10%;
+			width: calc(100vw - #{$main_tile_size_large});
+			p{
+				font-size: 1.3em;
+			}
 		}
 	}
 }

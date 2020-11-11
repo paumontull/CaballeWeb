@@ -1,3 +1,5 @@
+$main_tile_size_large: calc((100vh - #{$footer-height-large}) / 9);
+
 .main{
 	width: 100%;
 	height: 100%;
@@ -46,8 +48,8 @@
 	}
 
 	@include media-query(tablet-portrait-up){
-		grid-template-columns: calc((100vh - #{$footer-height-large}) / 9) 1fr;
-		grid-template-rows: calc((100vh - #{$footer-height-large}) / 9) calc((100vh - #{$footer-height-large}) * 8 / 9) 0fr;
+		grid-template-columns: $main_tile_size_large 1fr;
+		grid-template-rows: $main_tile_size_large calc(#{$main_tile_size_large} * 8) 0fr;
 		grid-template-areas:
 			"header header"
 			"menu content"
