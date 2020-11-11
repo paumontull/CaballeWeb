@@ -35,7 +35,7 @@ $main_tile_size_large: calc((100vh - #{$footer-height-large}) / 9);
 			flex-direction: column;
 			justify-content: center;
 
-			img{
+			.img-menu__img-container{
 				position: absolute;
 				object-fit: none;
 			}

@@ -12,9 +12,44 @@ $img-menu-items: 8;
 		position: relative;
 		height: 100%;
 		width: 100%;
-		overflow: hidden;
 		animation: zoom $animation-duration ease-in;
 		cursor: pointer;
+
+		.img-menu__img-container{
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+	
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.img-menu__hint{
+			position: absolute;
+			display: none;
+			height: 100%;
+			top: 50%;
+			right: 0;
+			transform: translate(100%, -50%);
+
+			span{
+				height: 100%;
+				display: block;
+				text-align: start;
+				padding: 2em;
+				background: $color_secondary;
+				color: $color_base;
+			}
+		}
+
+		:hover{
+			.img-menu__hint{
+				display: block;
+			}
+		}
 
 		@keyframes zoom{
 			50%{
@@ -26,11 +61,6 @@ $img-menu-items: 8;
 			100%{
 				transform: scale(1);
 			}
-		}
-
-		img{
-			height: 100%;
-			object-fit: cover;
 		}
 
 		&--active{

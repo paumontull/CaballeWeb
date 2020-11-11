@@ -233,10 +233,45 @@ p {
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: hidden;
   -webkit-animation: zoom 1s ease-in;
           animation: zoom 1s ease-in;
   cursor: pointer;
+}
+
+.img-menu__item .img-menu__img-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-menu__item .img-menu__img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-menu__item .img-menu__hint {
+  position: absolute;
+  display: none;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.img-menu__item .img-menu__hint span {
+  height: 100%;
+  display: block;
+  text-align: start;
+  padding: 2em;
+  background: #C69C6D;
+  color: #FFE4B0;
+}
+
+.img-menu__item :hover .img-menu__hint {
+  display: block;
 }
 
 @-webkit-keyframes zoom {
@@ -267,12 +302,6 @@ p {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
-
-.img-menu__item img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .img-menu__item--active {
@@ -749,7 +778,7 @@ p {
   grid-column-end: 4;
 }
 
-.landing__menu :last-child img {
+.landing__menu :last-child .img-menu__img-container {
   -o-object-position: 0 0;
      object-position: 0 0;
   width: 100%;
@@ -879,7 +908,7 @@ p {
           justify-content: center;
 }
 
-.main__menu > :nth-child(1) img {
+.main__menu > :nth-child(1) .img-menu__img-container {
   position: absolute;
   -o-object-fit: none;
      object-fit: none;
