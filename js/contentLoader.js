@@ -7,14 +7,14 @@ var loadContent = function loadContent(content){
 
 	if(content.startsWith("v")){
 		//handle vestit
-		htmlContent = "/content/vestits/" + content + ".html";
+		htmlContent = "content/vestits/" + content + ".html";
 		selectedImgMenuItem = parseInt(content[1]);
 	}
 	else if(content.startsWith("about-")){
-		htmlContent = "/content/about/" + content + ".html";
+		htmlContent = "content/about/" + content + ".html";
 	}
 	else if(content === "col.leccio"){
-		htmlContent = "/content/" + content + ".html";
+		htmlContent = "content/" + content + ".html";
 		selectedImgMenuItem = 8;
 	}
 
@@ -31,7 +31,7 @@ var loadContent = function loadContent(content){
 var changeState = function changeState(content){
 	const state = {"content": 1};
 	const title = "";
-	const url = "/main.html?content=" + content;
+	const url = "main.html?content=" + content;
 
 	history.pushState(state, title, url);
 	loadContent(content);

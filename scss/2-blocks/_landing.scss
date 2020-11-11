@@ -46,7 +46,7 @@
 
 		p{
 			font-family: "Cochin";
-			font-size: .95em;
+			font-size: .8em;
 			color: $color_dark;
 		}
 	}
@@ -90,23 +90,24 @@
 			background: $color_secondary;
 	
 			img{
-				width: 60%;
+				height: 30vh;
+				object-fit: contain;
 				margin: auto;
 			}
 		}
 	
 		&__hero-title{
-			padding: .5em 25%;
+			padding: .5em 15%;
 	
 			h1{
 				font-style: normal;
-				font-size: 1.75em;
+				font-size: 3.6vh;
 				font-weight: 500;
 			}
 		}
 
 		&__hero-quote{
-			padding: .5em 25%;
+			padding: .5em 15%;
 			display: flex;
 			justify-content: center;
 			align-content: center;
@@ -114,7 +115,7 @@
 	
 			p{
 				font-family: "Cochin";
-				font-size: 1.1em;
+				font-size: 2.2vh;
 				text-align: center;
 				color: $color_dark;
 			}

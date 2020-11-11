@@ -756,7 +756,7 @@ p {
 
 .landing__hero-quote p {
   font-family: "Cochin";
-  font-size: .95em;
+  font-size: .8em;
   color: #51402D;
 }
 
@@ -811,19 +811,21 @@ p {
     background: #C69C6D;
   }
   .landing__hero-img img {
-    width: 60%;
+    height: 30vh;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin: auto;
   }
   .landing__hero-title {
-    padding: .5em 25%;
+    padding: .5em 15%;
   }
   .landing__hero-title h1 {
     font-style: normal;
-    font-size: 1.75em;
+    font-size: 3.6vh;
     font-weight: 500;
   }
   .landing__hero-quote {
-    padding: .5em 25%;
+    padding: .5em 15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -839,7 +841,7 @@ p {
   }
   .landing__hero-quote p {
     font-family: "Cochin";
-    font-size: 1.1em;
+    font-size: 2.2vh;
     text-align: center;
     color: #51402D;
   }
