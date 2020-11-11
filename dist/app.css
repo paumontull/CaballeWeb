@@ -2,7 +2,7 @@
   font-family: "AvenirNext";
   font-weight: 100;
   font-weight: lighter;
-  src: url("fonts/AvenirNext-UltraLight.woff2"), url("fonts/AvenirNext-UltraLight.woff"), url("fonts/AvenirNext-UltraLight.ttf");
+  src: url("../fonts/AvenirNext-UltraLight.woff2"), url("../fonts/AvenirNext-UltraLight.woff"), url("../fonts/AvenirNext-UltraLight.ttf");
 }
 
 @font-face {
@@ -10,14 +10,14 @@
   font-weight: 100;
   font-weight: lighter;
   font-style: italic;
-  src: url("fonts/AvenirNext-UltraLightItalic.woff2"), url("fonts/AvenirNext-UltraLightItalic.woff"), url("fonts/AvenirNext-UltraLightItalic.ttf");
+  src: url("../fonts/AvenirNext-UltraLightItalic.woff2"), url("../fonts/AvenirNext-UltraLightItalic.woff"), url("../fonts/AvenirNext-UltraLightItalic.ttf");
 }
 
 @font-face {
   font-family: "AvenirNext";
   font-weight: 500;
   font-weight: normal;
-  src: url("fonts/AvenirNext-Regular.woff2"), url("fonts/AvenirNext-Regular.woff"), url("fonts/AvenirNext-Regular.ttf");
+  src: url("../fonts/AvenirNext-Regular.woff2"), url("../fonts/AvenirNext-Regular.woff"), url("../fonts/AvenirNext-Regular.ttf");
 }
 
 @font-face {
@@ -25,14 +25,14 @@
   font-weight: 500;
   font-weight: normal;
   font-style: italic;
-  src: url("fonts/AvenirNext-Italic.woff2"), url("fonts/AvenirNext-Italic.woff"), url("fonts/AvenirNext-Italic.ttf");
+  src: url("../fonts/AvenirNext-Italic.woff2"), url("../fonts/AvenirNext-Italic.woff"), url("../fonts/AvenirNext-Italic.ttf");
 }
 
 @font-face {
   font-family: "AvenirNext";
   font-weight: 600;
   font-weight: normal;
-  src: url("fonts/AvenirNext-Medium.woff2"), url("fonts/AvenirNext-Medium.woff"), url("fonts/AvenirNext-Medium.ttf");
+  src: url("../fonts/AvenirNext-Medium.woff2"), url("../fonts/AvenirNext-Medium.woff"), url("../fonts/AvenirNext-Medium.ttf");
 }
 
 @font-face {
@@ -40,14 +40,14 @@
   font-weight: 600;
   font-weight: normal;
   font-style: italic;
-  src: url("fonts/AvenirNext-MediumItalic.woff2"), url("fonts/AvenirNext-MediumItalic.woff"), url("fonts/AvenirNext-MediumItalic.ttf");
+  src: url("../fonts/AvenirNext-MediumItalic.woff2"), url("../fonts/AvenirNext-MediumItalic.woff"), url("../fonts/AvenirNext-MediumItalic.ttf");
 }
 
 @font-face {
   font-family: "AvenirNext";
   font-weight: 700;
   font-weight: bold;
-  src: url("fonts/AvenirNext-DemiBold.woff2"), url("fonts/AvenirNext-DemiBold.woff"), url("fonts/AvenirNext-DemiBold.ttf");
+  src: url("../fonts/AvenirNext-DemiBold.woff2"), url("../fonts/AvenirNext-DemiBold.woff"), url("../fonts/AvenirNext-DemiBold.ttf");
 }
 
 @font-face {
@@ -55,14 +55,14 @@
   font-weight: 700;
   font-weight: bold;
   font-style: italic;
-  src: url("fonts/AvenirNext-DemiBoldItalic.woff2"), url("fonts/AvenirNext-DemiBoldItalic.woff"), url("fonts/AvenirNext-DemiBoldItalic.ttf");
+  src: url("../fonts/AvenirNext-DemiBoldItalic.woff2"), url("../fonts/AvenirNext-DemiBoldItalic.woff"), url("../fonts/AvenirNext-DemiBoldItalic.ttf");
 }
 
 @font-face {
   font-family: "AvenirNext";
   font-weight: 800;
   font-weight: bold;
-  src: url("fonts/AvenirNext-Bold.woff2"), url("fonts/AvenirNext-Bold.woff"), url("fonts/AvenirNext-Bold.ttf");
+  src: url("../fonts/AvenirNext-Bold.woff2"), url("../fonts/AvenirNext-Bold.woff"), url("../fonts/AvenirNext-Bold.ttf");
 }
 
 @font-face {
@@ -70,14 +70,14 @@
   font-weight: 700;
   font-weight: bold;
   font-style: italic;
-  src: url("fonts/AvenirNext-BoldItalic.woff2"), url("fonts/AvenirNext-BoldItalic.woff"), url("fonts/AvenirNext-BoldItalic.ttf");
+  src: url("../fonts/AvenirNext-BoldItalic.woff2"), url("../fonts/AvenirNext-BoldItalic.woff"), url("../fonts/AvenirNext-BoldItalic.ttf");
 }
 
 @font-face {
   font-family: "AvenirNext";
   font-weight: 900;
   font-weight: bolder;
-  src: url("fonts/AvenirNext-Heavy.woff2"), url("fonts/AvenirNext-Heavy.woff"), url("fonts/AvenirNext-Heavy.ttf");
+  src: url("../fonts/AvenirNext-Heavy.woff2"), url("../fonts/AvenirNext-Heavy.woff"), url("../fonts/AvenirNext-Heavy.ttf");
 }
 
 @font-face {
@@ -85,14 +85,14 @@
   font-weight: 900;
   font-weight: bolder;
   font-style: italic;
-  src: url("fonts/AvenirNext-HeavyItalic.woff2"), url("fonts/AvenirNext-HeavyItalic.woff"), url("fonts/AvenirNext-HeavyItalic.ttf");
+  src: url("../fonts/AvenirNext-HeavyItalic.woff2"), url("../fonts/AvenirNext-HeavyItalic.woff"), url("../fonts/AvenirNext-HeavyItalic.ttf");
 }
 
 @font-face {
   font-family: "Cochin";
   font-weight: 500;
   font-weight: normal;
-  src: url("fonts/Cochin.woff2"), url("fonts/Cochin.woff"), url("fonts/Cochin.ttf");
+  src: url("../fonts/Cochin.woff2"), url("../fonts/Cochin.woff"), url("../fonts/Cochin.ttf");
 }
 
 @font-face {
@@ -100,14 +100,14 @@
   font-weight: 500;
   font-weight: normal;
   font-style: italic;
-  src: url("fonts/Cochin-Italic.woff2"), url("fonts/Cochin-Italic.woff"), url("fonts/Cochin-Italic.ttf");
+  src: url("../fonts/Cochin-Italic.woff2"), url("../fonts/Cochin-Italic.woff"), url("../fonts/Cochin-Italic.ttf");
 }
 
 @font-face {
   font-family: "Cochin";
   font-weight: 800;
   font-weight: bold;
-  src: url("fonts/Cochin-Bold.woff2"), url("fonts/Cochin-Bold.woff"), url("fonts/Cochin-Bold.ttf");
+  src: url("../fonts/Cochin-Bold.woff2"), url("../fonts/Cochin-Bold.woff"), url("../fonts/Cochin-Bold.ttf");
 }
 
 @font-face {
@@ -115,7 +115,7 @@
   font-weight: 800;
   font-weight: bold;
   font-style: italic;
-  src: url("fonts/Cochin-BoldItalic.woff2"), url("fonts/Cochin-BoldItalic.woff"), url("fonts/Cochin-BoldItalic.ttf");
+  src: url("../fonts/Cochin-BoldItalic.woff2"), url("../fonts/Cochin-BoldItalic.woff"), url("../fonts/Cochin-BoldItalic.ttf");
 }
 
 *, *::before, *::after {
