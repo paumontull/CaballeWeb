@@ -1,0 +1,21 @@
+.content-vestuari{
+	//background: $color_secondary;
+
+	&__fragment{
+		padding: 2.3em;
+		padding-bottom: 0;
+		width: 100%;
+
+		&:last-of-type{
+			padding-bottom: 2.3em;
+		}
+
+		h1{
+			margin-bottom: .5em;
+		}
+	}
+
+	@include media-query(tablet-landscape-up){
+		padding: 0 15vw;
+	}
+}

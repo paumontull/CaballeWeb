@@ -10,30 +10,4 @@
 	}
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
-
-	&__intro{
-		flex: 0 0 auto;
-		position: relative;
-		height: 100%;
-		width: $timeline_period_width_small;
-		padding: 2em;
-		padding-bottom: 10vh;
-
-		p{
-			font-size: 1.9vh;
-		}
-		img{
-			margin: auto
-		}
-	}
-
-	@include media-query(tablet-portrait-up){
-		&__intro{
-			padding: 10%;
-			width: calc(100vw - #{$main_tile_size_large});
-			p{
-				font-size: 1.3em;
-			}
-		}
-	}
 }

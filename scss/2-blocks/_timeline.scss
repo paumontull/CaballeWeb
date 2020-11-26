@@ -1,38 +1,37 @@
 $timeline_period_width_small: 88vw;
-$timeline_period_width_large: 20vw;
+$timeline_period_width_large: 30vw;
+$timeline_line_height: 7vh;
 
 .timeline{
 	height: 100%;
+	padding-top: 1em;
 	position: relative;
-
-	&__title{
-		height: 15%;
-		display: flex;
-		align-items: center;
-		justify-content: right;
-		padding: 1em 5em;
-		h2{
-			display: block;
-			text-transform: uppercase;
-			font-size: 5vh;
-			margin: 0;
-		}
-	}
-
-	&__content{
-		height: 85%;
-		width: 100%;
-		display: flex;
-	}
+	display: flex;
 
 	&__intro{
 		height: 100%;
 		width: $timeline_period_width_small;
 
+		padding: 2em;
+		padding-bottom: $timeline_line_height;
+
+		p{
+			font-size: 1.9vh;
+		}
+		img{
+			margin: auto
+		}
+	}
+
+	&__snippet{
+		height: 100%;
+		width: $timeline_period_width_small;
+
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 1fr 10vh;
+		grid-template-rows: 1fr 0fr $timeline_line_height;
 		grid-template-areas:
+			"."
 			"text"
 			".";
 
@@ -42,8 +41,7 @@ $timeline_period_width_large: 20vw;
 			text-align: start;
 			width: 100%;
 			height: 100%;
-			padding: 10%;
-			padding-left: 0;
+			padding: 2em 10%;
 		}
 	}
 
@@ -53,7 +51,7 @@ $timeline_period_width_large: 20vw;
 		//margin-right: 2em;
 		display: grid;
 		grid-template-columns: 1em 1fr 60% 1em;
-		grid-template-rows: 3fr .3em 1fr 10vh;
+		grid-template-rows: 3fr .3em 0.8fr $timeline_line_height;
 		grid-template-areas:
 			". img img ."
 			". . . ."
@@ -113,7 +111,7 @@ $timeline_period_width_large: 20vw;
 		height: 0;
 		width: 100%;
 		position: absolute;
-		bottom: 10vh;
+		bottom: $timeline_line_height;
 		border-bottom-style: solid;
 		border-color: $color_dark;
 		border-width: 5px;
@@ -121,7 +119,17 @@ $timeline_period_width_large: 20vw;
 
 	@include media-query(tablet-portrait-up){
 		&__intro{
+			width: calc(100vw - #{$main_tile_size_large});
+			padding: 10vh;
+			p{
+				font-size: 1.3em;
+			}
+		}
+		&__snippet{
 			width: $timeline_period_width_large;
+			p{
+				padding-right: 10vh;
+			}
 		}
 		&__period{
 			width: $timeline_period_width_large;

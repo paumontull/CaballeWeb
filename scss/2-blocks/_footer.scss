@@ -24,7 +24,7 @@ $footer-height-large: 6em;
 
 	@include media-query(tablet-portrait-up){
 		img{
-			width: 20vh;
+			width: 25vh;
 		}
 	}
 	@include media-query(tablet-landscape-up){

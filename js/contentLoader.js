@@ -13,9 +13,13 @@ var loadContent = function loadContent(content){
 	else if(content.startsWith("about-")){
 		htmlContent = "content/about/" + content + ".html";
 	}
-	else if(content === "col.leccio"){
+	else if(content === "caballe-vestuari"){
 		htmlContent = "content/" + content + ".html";
 		selectedImgMenuItem = 8;
+	}
+	else if(content === "col.leccio"){
+		htmlContent = "content/" + content + ".html";
+		selectedImgMenuItem = 9;
 	}
 
 	imgMenuItems.forEach((item, i) => {
@@ -69,7 +73,10 @@ imgMenuItems.forEach((item, i) => {
 		else if(i < 8){
 			changeState("v" + i);
 		}
-		else{
+		else if(i === 8){
+			changeState("caballe-vestuari");
+		}
+		else if(i === 9){
 			changeState("col.leccio");
 		}
 	})
